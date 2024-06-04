@@ -1,10 +1,6 @@
-{% include 'partials/head.html' %}
+{% extends "recipe/pages/base.html" %} 
 
-<body>
-    {% include "partials/header.html" %}
-    {% include "partials/search.html" %}
-
-    <main class="main-content-container">
+{% block content %}
         <div class="main-content main-content-list container">
             {% include "partials/recipe.html" %}
             {% include "partials/recipe.html" %}
@@ -17,8 +13,5 @@
             {% include "partials/recipe.html" %}
             {% include "partials/recipe.html" %}
         </div>
-    </main>
+{% endblock content %}
 
-    {% include "partials/footer.html" %}
-
-</html>
