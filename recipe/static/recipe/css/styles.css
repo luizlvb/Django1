@@ -148,9 +148,14 @@
         max-width: 100%;
     }
 
+    .recipe-content{
+        padding: var(--spacing-gutter-medium);
+    }
+
    
     .recipe-list-item{
         max-width: 64rem;
+        height: fit-content;
     }
 
     .recipe-list-item:hover{

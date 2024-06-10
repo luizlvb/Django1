@@ -9,11 +9,11 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import sys
+import os
 from pathlib import Path
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -26,7 +26,14 @@ SECRET_KEY = 'django-insecure-y#c9*)@mwloq#ky=*9)l6ftbh7b-4p7x+0043w2htbnj!rj)!v
 DEBUG = True
 
 ALLOWED_HOSTS = []
+#
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
+print(BASE_DIR)
 
+#
+SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
+print(SETTINGS_PATH)
 
 # Application definition
 
@@ -55,7 +62,7 @@ ROOT_URLCONF = 'projeto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/home/luiz/Desktop/Django1/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
