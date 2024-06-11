@@ -150,6 +150,7 @@
 
     .recipe-content{
         padding: var(--spacing-gutter-medium);
+        height: fit-content;
     }
 
    
