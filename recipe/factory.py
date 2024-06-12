@@ -32,7 +32,7 @@ def make_recipe():
 				'url': 'https://loremflickr.com/%s/%s/food,cook' % rand_ratio(),
 			}
 		}
-	print('\n'*3, 'make_recipe > ', _recipe)
+	
 	return _recipe
 
 
